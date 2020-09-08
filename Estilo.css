@@ -1,0 +1,171 @@
+/*
+/////
+/////
+/////
+///// Opciones de menu y sub-menu
+/////
+/////
+/////
+*/
+.navbar{
+    font-weight: bold;
+    /*Color de el menu*/
+    background-color: rgb(172, 172, 172);
+    /*Color del borde superior e inferior del menu*/
+    border-top: 3px solid red;
+    border-bottom: 3px solid red;
+}
+
+.dropdown:hover>.dropdown-menu{
+    /*Efecto de pasar el clic se activa en el menu*/
+    display: block;
+}
+
+.navbar .navbar-nav li a:focus{
+    background-color: transparent;
+}
+
+.navbar .navbar-nav .dropdown-menu{
+    /*Pequeño espacio entre el cuadro de menu y el submenu para que no choque con el borde el menu*/
+    margin-top: 3px;
+    /*Color de los sub-menu*/
+    background-color:  rgb(172, 172, 172);
+    /*Ancho de los sub-menu*/
+    width: 150px;
+}
+
+.navbar .navbar-nav .dropdown-menu li a{
+    /*Color de las letra de los sub menu*/
+    color: black;
+    /*Espacio superior e inferior entre los textos del submenu*/
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: 0.6s;
+}
+
+.navbar .navbar-nav .dropdown-menu li a:hover{
+    /*Color del las letras de los sub-menu al pasar el clic*/
+    color: rgb(172, 172, 172);
+    /*Color del borde izquierdo de los sub-menu al pasar el clic*/
+    border-left: 2px solid red;
+}
+
+/*
+/////
+/////
+/////
+///// Cuerpo del HTML (BODY)
+/////
+/////
+/////
+*/
+
+body{
+    padding-top: 80px;
+    background: #FFF;
+}
+
+/*
+/////
+/////
+/////
+///// Pie de pagina (FOOTER)
+/////
+/////
+/////
+*/
+
+#footer{
+    background: #00428a;
+    padding: 0 0 30px 0;
+    color: #eee;
+    font-size: 14px;   
+}
+
+.footer-top{
+    background: 004a99;
+    padding: 60px 0 30px 0;
+}
+
+.footer-top .footer-info{
+    margin-bottom: 30px;
+}
+
+.footer-top .footer-info h3{
+    font-size: 34px;
+    margin: 0 0 20px 0;
+    padding: 2px 0 2px 0;
+    line-height: 1;
+    font-family: "montserrat", sans-serif;
+    color: #FFF;
+    font-weight: 400;
+    letter-spacing: 3px;
+    text-transform: uppercase;   
+}
+
+.footer-top .footer-info p{
+    font-size: 13px;
+    line-height: 24px;
+    margin-bottom: 0;
+    font-family: "montserrat", sans-serif;
+    color: #ecf5ff;
+}
+
+.footer-top .social-links a{
+    font-size: 18px;
+    display: inline-block;
+    background: #007bff;
+    color: #FFF;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+}
+
+.footer-top .social-links a:hover{
+    background: #0067d5;
+    color: #FFF;
+}
+
+.footer-top h4{
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFF;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.footer-top .footer-links{
+    margin-bottom: 30px;
+}
+
+.footer-top .footer-links ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-top .footer-links ul li{
+    padding: 8px 0;
+}
+
+.footer-top .footer-links ul li:first-child{
+    padding-top: 0;
+}
+
+.footer-top .footer-links ul a{
+    color: #ecf5ff;
+}
+
+.footer-top .footer-links ul a:hover{
+    color: #74b5fc;
+}
+
+.footer-top .footer-contact{
+    margin-bottom: 30px;
+}
