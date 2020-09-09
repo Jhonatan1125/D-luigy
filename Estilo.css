@@ -8,46 +8,46 @@
 /////
 */
 .navbar{
-    font-weight: bold;
-    /*Color de el menu*/
-    background-color: rgb(172, 172, 172);
-    /*Color del borde superior e inferior del menu*/
-    border-top: 3px solid red;
-    border-bottom: 3px solid red;
+  font-weight: bold;
+  /*Color de el menu*/
+  background-color: rgb(172, 172, 172);
+  /*Color del borde superior e inferior del menu*/
+  border-top: 2px solid red;
+  border-bottom: 2px solid red;
 }
 
 .dropdown:hover>.dropdown-menu{
-    /*Efecto de pasar el clic se activa en el menu*/
-    display: block;
+  /*Efecto de pasar el clic se activa en el menu*/
+  display: block;
 }
 
 .navbar .navbar-nav li a:focus{
-    background-color: transparent;
+  background-color: transparent;
 }
 
 .navbar .navbar-nav .dropdown-menu{
-    /*Pequeño espacio entre el cuadro de menu y el submenu para que no choque con el borde el menu*/
-    margin-top: 3px;
-    /*Color de los sub-menu*/
-    background-color:  rgb(172, 172, 172);
-    /*Ancho de los sub-menu*/
-    width: 150px;
+  /*Pequeño espacio entre el cuadro de menu y el submenu para que no choque con el borde el menu*/
+  margin-top: 3px;
+  /*Color de los sub-menu*/
+  background-color:  rgb(172, 172, 172);
+  /*Ancho de los sub-menu*/
+  width: 150px;
 }
 
 .navbar .navbar-nav .dropdown-menu li a{
-    /*Color de las letra de los sub menu*/
-    color: black;
-    /*Espacio superior e inferior entre los textos del submenu*/
-    padding-top: 10px;
-    padding-bottom: 10px;
-    transition: 0.6s;
+  /*Color de las letra de los sub menu*/
+  color: black;
+  /*Espacio superior e inferior entre los textos del submenu*/
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: 0.6s;
 }
 
 .navbar .navbar-nav .dropdown-menu li a:hover{
-    /*Color del las letras de los sub-menu al pasar el clic*/
-    color: rgb(172, 172, 172);
-    /*Color del borde izquierdo de los sub-menu al pasar el clic*/
-    border-left: 2px solid red;
+  /*Color del las letras de los sub-menu al pasar el clic*/
+  color: rgb(172, 172, 172);
+  /*Color del borde izquierdo de los sub-menu al pasar el clic*/
+  border-left: 2px solid red;
 }
 
 /*
@@ -59,16 +59,64 @@
 /////
 /////
 */
-
 body{
-    padding-top: 80px;
-    background: #FFF;
+  padding-top: 50px;
+  background: #FFF;
 }
 
-.main{
-  width: 1200px;
-  height: 800px;
+h1{font-size: 66px; font-weight: 600; line-height: 80px;}
+h2{font-size: 48px; margin-bottom: 30px;}
+
+p{
+  font-size: 18px;
+  color: #999999;
+  line-height: 1.8;
+  margin-bottom: 0;
 }
+
+section{
+  padding: 120px 0;
+}
+
+#objetivo{
+  background-color: teal;
+}
+
+#trabajamos{
+  background-color: thistle;
+}
+
+#contactenos{
+  background-color: tomato;
+}
+#inicio{
+  background-image: url('imagenes/Body/Fondo.jpg');
+  background-size: cover;
+  padding-top: 90px;
+  min-height: 700px;
+  color: white;
+}
+
+#inicio p{
+  color: white;
+}
+
+
+.contenido-inicio{
+  max-width: 800px;
+  /*top - right - bottom - lef*/
+  margin: auto;
+  text-align: center;
+  float: right;
+}
+
+.contenido-central{
+  max-width: 800px;
+  /*top - right - bottom - lef*/
+  margin: auto;
+  text-align: center;
+}
+
 
 /*
 /////
