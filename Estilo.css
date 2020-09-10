@@ -15,10 +15,11 @@
   border-top: 2px solid red;
   border-bottom: 2px solid red;
 }
-
-.dropdown:hover>.dropdown-menu{
-  /*Efecto de pasar el clic se activa en el menu*/
-  display: block;
+/*Esta funcion solo se habilitara para computadores*/
+@media all and (min-width: 992px){
+  .navbar .nav-item .dropdown-menu{  display:block; opacity: 0;  visibility: hidden; transition:.3s; margin-top:0;  }
+	.navbar .dropdown-menu.fade-down{ top:80%; transform: rotateX(-75deg); transform-origin: 0% 0%; }
+	.navbar .nav-item:hover .dropdown-menu{ transition: .8s; opacity:1; visibility:visible; top:100%; transform: rotateX(0deg); }
 }
 
 .navbar .navbar-nav li a:focus{
@@ -69,7 +70,7 @@ h2{font-size: 48px; margin-bottom: 30px;}
 
 p{
   font-size: 18px;
-  color: #999999;
+  color: #b6b6b6;
   line-height: 1.8;
   margin-bottom: 0;
 }
@@ -82,8 +83,16 @@ section{
   background-color: teal;
 }
 
+#objetivo h2{
+  color: white;
+}
+
 #trabajamos{
   background-color: thistle;
+  background-image: url('imagenes/Body/Fondo2.jpg');
+  background-size: cover;
+  padding-top: 90px;
+  min-height: 700px;
 }
 
 #contactenos{
