@@ -1,3 +1,4 @@
+@import url(https://allfont.es/allfont.css?fonts=playfair-display-black-italic);
 /*
 /////
 /////
@@ -19,7 +20,9 @@
 @media all and (min-width: 992px){
   .navbar .nav-item .dropdown-menu{  display:block; opacity: 0;  visibility: hidden; transition:.3s; margin-top:0;  }
 	.navbar .dropdown-menu.fade-down{ top:80%; transform: rotateX(-75deg); transform-origin: 0% 0%; }
-	.navbar .nav-item:hover .dropdown-menu{ transition: .8s; opacity:1; visibility:visible; top:100%; transform: rotateX(0deg); }
+  .navbar .nav-item:hover .dropdown-menu{ transition: .8s; opacity:1; visibility:visible; top:100%; transform: rotateX(0deg); }
+  .mapa{width: 700px; height: 600px;}
+  .video-fluid{width: 700px; height: auto;}
 }
 
 .navbar .navbar-nav li a:focus{
@@ -79,25 +82,6 @@ section{
   padding: 120px 0;
 }
 
-#objetivo{
-  background-color: teal;
-}
-
-#objetivo h2{
-  color: white;
-}
-
-#trabajamos{
-  background-color: thistle;
-  background-image: url('imagenes/Body/Fondo2.jpg');
-  background-size: cover;
-  padding-top: 90px;
-  min-height: 700px;
-}
-
-#contactenos{
-  background-color: tomato;
-}
 #inicio{
   background-image: url('imagenes/Body/Fondo.jpg');
   background-size: cover;
@@ -108,8 +92,77 @@ section{
 
 #inicio p{
   color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 40px;
 }
 
+
+#inicio h1{
+  font-family: 'Playfair Display Black Italic',arial;
+  font-size: 80px;
+}
+
+#objetivo{
+  background-color: teal;
+}
+
+#objetivo p{
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+}
+
+#objetivo h2{
+  color: white;
+}
+
+#trabajamos{
+  background-color: thistle;
+  background-image: url('imagenes/Body/Fondo2.jpg');
+  background-size: cover;
+  min-height: 400px;
+}
+
+#trabajamos h1{
+  color: white;
+}
+
+#trabajamos p{
+  color: white;
+  font-size: 35px;
+}
+
+.Imagenes-medianas{
+  width: 350px;
+  height: 300px;
+}
+
+.margen{
+  margin-top: 40px;
+}
+
+.video-fluid{
+width: 100%;
+height: 100%;
+}
+#contactenos{
+  background-image: url('imagenes/Body/Fondo3.jpg');
+  min-height: 800px;
+}
+
+#contactenos p{
+  font-size: 40px;
+  color: white; 
+}
+
+#contactenos h2{
+  color: white;
+}
+
+.margen-contactenos{
+  margin-top: 100px;
+}
 
 .contenido-inicio{
   max-width: 800px;
