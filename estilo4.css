@@ -82,13 +82,13 @@
 .container1{
   padding: 0px;
   width: 100%;
-  height: 300px;
+  height: 400px;
   background:yellow;
 }
 
 .slider-top{
   width: 100%;
-  height: 300px;
+  height: 400px;
 }
 /* Estilo de Slides/
 /* Estilo de card descuentos*/
@@ -98,8 +98,6 @@ a:hover {
 section{
   padding: 120px 0;
 }
-
-
 .portfolio-container{
   position: relative;
   overflow: hidden;
@@ -119,14 +117,18 @@ section{
 .portfolio-details {
   position: absolute;
   bottom: 25px;
-  left: 25px;
+  left: 70px;
   z-index: 9000;
 }
-.portfolio-container h2{
-  margin-bottom: 0px;
+.portfolio-container h6 {
+  margin-bottom: 50px;
 }
-.portfolio-details a h2, .portfolio-details a p{
+.portfolio-details a h6, .portfolio-details a p{
   color: azure;
+}
+.img-fluid{
+  width: 80%;
+  height: 80%;
 }
 /* Estilo de card Descuentos*/
 /* Estilo de card catalogo*/
