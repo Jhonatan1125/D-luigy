@@ -76,17 +76,13 @@
 ///// Cuerpo del HTML (BODY)
 /////
 /////
-/////
+///// color gris #e4e4e4
 */
-.busqueda{
-  width: 40px;
-  /* top | right | bottom | left */
-  margin: 2px 0px 2px 2px;
-}
+.produc{
+  margin-top: 10px;
+  margin-bottom: 10px;
+} 
 
-.menu-lateral{
-  border: 3px solid red;
-}
 /*
 /////
 /////

@@ -71,7 +71,279 @@
   <!--FIN DEL MENU-->
 
   <!--INICIO DEL CUERPO-->
- 
+  <section class="Titulo-Tienda">
+    <div class="container-fluid" style="padding: 0px;">
+      <h2 class="">Tienda</h2>
+      <nav>
+        <ol class="breadcrumb text-white">
+          <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+          <li class="breadcrumb-item"><a href="#">Tienda</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Articulos</li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+
+  <section class="Contenido-Tienda">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card">
+            <!--Filtro 1-->
+            <div class="filtro-grupo">
+              <div class="card-header">
+                <a href="#" data-toggle="collapse" data-target="#filtro_1" aria-expanded="false" class="collapsed">
+                  <h6 class="title">Tipo de Prenda</h6>
+                </a>
+              </div>
+              <div class="filtro-contenido collapse show" id="filtro_1">
+                <div class="card-contenido">
+                  <form class="pb-3">
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="Search">
+                      <div class="input-group-append">
+                        <button class="btn btn-light" type="button">S</button>
+                      </div>
+                    </div>
+                  </form>
+
+                  <ul class="list-menu">
+                    <li><a href="#">Vestidos</a></li>
+                    <li><a href="#">Blusas</a></li>
+                    <li><a href="#">Pantalon Formal</a></li>
+                    <li><a href="#">Camisa Formal</a></li>
+                    <li><a href="#">Correa</a></li>
+                    <li><a href="#">Corbatas</a></li>
+                    <li><a href="#">Accesorios</a></li>
+                  </ul>
+
+                </div>
+              </div>
+            </div>
+            <!--Filtro 2-->
+            <div class="filter-grupo">
+              <div class="card-header">
+                <a href="#" data-toggle="collapse" data-target="#filtro_2" aria-expanded="false" class="collapsed">
+                  <h6 class="title">Material</h6>
+                </a>
+              </div>
+              <div class="filtro-contenido collapse" id="filtro_2">
+                <div class="card-contenido">
+                  <label class="custom-control custom-checkbox">
+                    <input type="checkbox" checked="" class="custom-control-input">
+                    <div class="custom-control-label">Mercedes
+                      <b class="badge badge-pill badge-light float-right">120</b> </div>
+                  </label>
+
+                  <label class="custom-control custom-checkbox">
+                    <input type="checkbox" checked="" class="custom-control-input">
+                    <div class="custom-control-label">Toyota
+                      <b class="badge badge-pill badge-light float-right">15</b> </div>
+                  </label>
+
+                  <label class="custom-control custom-checkbox">
+                    <input type="checkbox" checked="" class="custom-control-input">
+                    <div class="custom-control-label">Mitsubishi
+                      <b class="badge badge-pill badge-light float-right">35</b> </div>
+                  </label>
+
+                  <label class="custom-control custom-checkbox">
+                    <input type="checkbox" checked="" class="custom-control-input">
+                    <div class="custom-control-label">Nissan
+                      <b class="badge badge-pill badge-light float-right">89</b> </div>
+                  </label>
+
+                  <label class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input">
+                    <div class="custom-control-label">Honda
+                      <b class="badge badge-pill badge-light float-right">30</b> </div>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <!--Filtro 3-->
+            <div class="filtro-grupo">
+              <div class="card-header">
+                <a href="#" data-toggle="collapse" data-target="#filtro_3" aria-expanded="false" class="">
+                  <h6 class="title">Rango De Precio</h6>
+                </a>
+              </div>
+              <div class="filter-content collapse" id="filtro_3">
+                <div class="card-body">
+                  <input type="range" class="custom-range" min="0" max="100" name="">
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label>Min</label>
+                      <input class="form-control" placeholder="$0" type="number">
+                    </div>
+                    <div class="form-group text-right col-md-6">
+                      <label>Max</label>
+                      <input class="form-control" placeholder="$1,0000" type="number">
+                    </div>
+                  </div>
+                  <button class="btn btn-block btn-primary">Aplicar</button>
+                </div>
+              </div>
+            </div>
+            <!--filtro 4-->
+            <div class="filter-group">
+              <div class="card-header">
+                <a href="#" data-toggle="collapse" data-target="#filtro_4" aria-expanded="false" class="collapsed">
+                  <i class="icon-control fa fa-chevron-down"></i>
+                  <h6 class="title">Tallas</h6>
+                </a>
+              </div>
+              <div class="filter-content collapse" id="filtro_4">
+                <div class="card-body">
+                  <label class="checkbox-btn">
+                    <input type="checkbox">
+                    <span class="btn btn-light"> XS </span>
+                  </label>
+
+                  <label class="checkbox-btn">
+                    <input type="checkbox">
+                    <span class="btn btn-light"> SM </span>
+                  </label>
+
+                  <label class="checkbox-btn">
+                    <input type="checkbox">
+                    <span class="btn btn-light"> LG </span>
+                  </label>
+
+                  <label class="checkbox-btn">
+                    <input type="checkbox">
+                    <span class="btn btn-light"> XXL </span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <!--filtro 5-->
+            <article class="filter-group">
+              <header class="card-header">
+                <a href="#" data-toggle="collapse" data-target="#filtro_5" aria-expanded="true" class="">
+                  <h6 class="title">Mas Filtros</h6>
+                </a>
+              </header>
+              <div class="filter-content in collapse" id="filtro_5">
+                <div class="card-body">
+                  <label class="custom-control custom-radio">
+                    <input type="radio" name="myfilter_radio" checked="" class="custom-control-input">
+                    <div class="custom-control-label">Campo1</div>
+                  </label>
+
+                  <label class="custom-control custom-radio">
+                    <input type="radio" name="myfilter_radio" class="custom-control-input">
+                    <div class="custom-control-label">Campo2</div>
+                  </label>
+
+                  <label class="custom-control custom-radio">
+                    <input type="radio" name="myfilter_radio" class="custom-control-input">
+                    <div class="custom-control-label">Campo3</div>
+                  </label>
+
+                  <label class="custom-control custom-radio">
+                    <input type="radio" name="myfilter_radio" class="custom-control-input">
+                    <div class="custom-control-label">Campo4</div>
+                  </label>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <div class="col-md-9">
+          <header class="border-bottom pb-3">
+            <div class="form-inline">
+              <span class="mr-md-auto">32 Items found </span>
+              <select class="mr-2 form-control">
+                <option>Latest items</option>
+                <option>Trending</option>
+                <option>Most Popular</option>
+                <option>Cheapest</option>
+              </select>
+              <div class="btn-group">
+                <a href="#" class="btn btn-outline-secondary" data-toggle="tooltip" title=""
+                  data-original-title="List view">L</a>
+                <a href="#" class="btn  btn-outline-secondary" data-toggle="tooltip" title=""
+                  data-original-title="Grid view">C</a>
+              </div>
+            </div>
+          </header>
+
+          <div class="row">
+            <div class="col-md-4 produc">
+              <div class="card">
+                <span class="badge badge-danger" style="position: absolute;"> NEW </span>
+                <img src="Imagenes/Body/chaqueta.jpg" class="card-img-top" alt="..." style="width: 100%; height: 100%;">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                  <var class="price">$84.00</var>
+                  <del class="price-old">$1980</del>
+                  <a href="#" class="btn btn-sm btn-outline-primary float-right">Add to cart <i
+                      class="fa fa-shopping-cart"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 produc">
+              <div class="card">
+                <img src="Imagenes/Body/Camisa.jpg" class="card-img-top" alt="..." style="width: 100%; height: 100%;">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                  <var class="price">$84.00</var>
+                  <del class="price-old">$1980</del>
+                  <a href="#" class="btn btn-sm btn-outline-primary float-right">Add to cart <i
+                      class="fa fa-shopping-cart"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 produc">
+              <div class="card">
+                <span class="badge badge-danger" style="position: absolute;"> NEW </span>
+                <img src="Imagenes/Body/chaqueta.jpg" class="card-img-top" alt="..." style="width: 100%; height: 100%;">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                  <var class="price">$84.00</var>
+                  <del class="price-old">$1980</del>
+                  <a href="#" class="btn btn-sm btn-outline-primary float-right">Add to cart <i
+                      class="fa fa-shopping-cart"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 produc">
+              <div class="card">
+                <img src="Imagenes/Body/Camisa.jpg" class="card-img-top" alt="..." style="width: 100%; height: 100%;">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                  <var class="price">$84.00</var>
+                  <del class="price-old">$1980</del>
+                  <a href="#" class="btn btn-sm btn-outline-primary float-right">Add to cart <i
+                      class="fa fa-shopping-cart"></i></a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+
   <!--FIN DEL CUERPO-->
 
   <!--INICIO DEL FOOTER-->
