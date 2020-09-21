@@ -69,13 +69,35 @@
   /*Color del borde izquierdo de los sub-menu al pasar el clic*/
   border-left: 3px solid red;
 }
+/*
+/////
+/////
+/////
+///// Cuerpo del HTML (BODY)
+/////
+/////
+/////
+*/
 .container1{
-  margin-top: 8px;
-  margin-left: 0px;
+  padding: 0px;
   width: 100%;
-  height: 100%;
-  background:black;
+  height: 300px;
+  background:yellow;
 }
+
+.slider-top{
+  width: 100%;
+  height: 300px;
+}
+/*
+/////
+/////
+/////
+///// Pie de pagina (FOOTER)
+/////
+/////
+/////
+*/
 .site-footer
 {
   background-color:#26272b;
