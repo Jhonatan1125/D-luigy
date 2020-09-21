@@ -78,6 +78,7 @@
 /////
 /////
 */
+/* Estilo de Slides*/
 .container1{
   padding: 0px;
   width: 100%;
@@ -89,12 +90,15 @@
   width: 100%;
   height: 300px;
 }
+/* Estilo de Slides/
+/* Estilo de card descuentos*/
 a:hover {
   text-decoration: none;
 }
 section{
   padding: 120px 0;
 }
+
 
 .portfolio-container{
   position: relative;
@@ -124,6 +128,49 @@ section{
 .portfolio-details a h2, .portfolio-details a p{
   color: azure;
 }
+/* Estilo de card Descuentos*/
+/* Estilo de card catalogo*/
+a:hover {
+    text-decoration: none;
+}
+section{
+    padding: 120px 0;
+}
+
+.card-container{
+    position: relative;
+    overflow: hidden;
+    margin: 10px 0;
+    border-radius: 2px;
+}
+.card-container img{
+    -moz-transition: all  0.8s;
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
+}
+.card-container:hover img{
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+.card-details {
+    position: absolute;
+    bottom: 25px;
+    left: 100px;
+    z-index: 9000;
+}
+.card-container h2{
+    margin-bottom: 0px;
+}
+.card-details a h2, .card-details a p{
+    color: azure;
+}
+.img-fluid{
+    margin-left:50px;
+    width: 70%;
+    height: 70%;
+}
+/* Estilo de card catalogo*/
 /*
 /////
 /////
