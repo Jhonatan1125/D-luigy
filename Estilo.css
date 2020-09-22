@@ -94,56 +94,6 @@ section{
   padding: 120px 0;
 }
 
-
-
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 300px) {
-  #inicio{
-    background-image: url('imagenes/Body/Fondo2.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: white;
-    height: 100%;
-    padding-top: 60px;
-  }
-
-  #inicio p{color: white; font-family: Arial, Helvetica, sans-serif; font-weight: bold; font-size: 5px;}
-}
-
-
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 991px) {
-  #inicio{
-    background-image: url('imagenes/Body/Fondo.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: white;
-    height: 700px;
-    padding-top: 60px;
-  }
-  
-  #inicio p{
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    font-size: 40px;
-  }  
-}
-#inicio p{
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  font-size: 40px;
-}
-
-
-#inicio h1{
-  font-family: 'Playfair Display Black Italic',arial;
-  font-size: 80px;
-}
-
 #objetivo{
   background-color: #c7c7c7;
 }
@@ -205,12 +155,6 @@ height: 100%;
   margin-top: 100px;
 }
 
-.contenido-inicio{
-  max-width: 900px;
-  /*top - right - bottom - lef*/
-  margin: auto;
-  text-align: center;
-}
 
 .contenido-central{
   max-width: 800px;
