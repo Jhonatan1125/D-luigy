@@ -1,0 +1,42 @@
+body{
+    background: rgb(145,145,145);
+background: linear-gradient(90deg, rgba(145,145,145,1) 0%, rgba(203,203,203,1) 35%, rgba(200,92,92,1) 100%);
+   
+   }
+   
+   *{
+       margin: 0;
+       padding: 0;
+       
+       
+   }
+   .fondo{
+     box-shadow: 0 0 20px 0 rgba(255,255,255,.4);
+    
+   }
+   .btn-dark:hover,
+   .btn-dark:focus{
+       background:#d63031;
+       color:#fff;
+       outline: 0;
+   }
+   .btn-outline-dark:hover,
+   .btn-outline-dark:focus{
+       
+   background:#d63031;
+       color:#fff;
+       outline: 0;
+    
+   
+   }
+   .card{
+       border: none;
+   }
+   
+   .card-body{
+   
+       box-shadow: 0 0 20px 0 rgba(255,255,255,.4);
+   
+       background: linear-gradient(125deg,#4F4F4F,#030303);
+       
+   }

@@ -1,0 +1,27 @@
+.glyphicon-print{
+    color:#3a2aca;
+    font-size: 30px;
+    display: flex;
+        flex-wrap: wrap;
+    
+}
+.glyphicon-shopping-cart{
+    color:red;
+    font-size: 40px; 
+    
+}
+
+.glyphicon-refresh{
+    color:yellow;
+    font-size: 40px;
+}
+
+.imge{
+    width: 35px;
+    height: 35px;
+}
+
+
+
+
+
