@@ -1,28 +1,4 @@
 @import url(https://allfont.es/allfont.css?fonts=playfair-display-black-italic);
-/*Versiones moviles*/
-/*Computador
-@media all and (min-width: 1440px){
-  .navbar .nav-item .dropdown-menu{  display:block; opacity: 0;  visibility: hidden; transition:.5s; margin-top:0;  }
-  .navbar .dropdown-menu.fade-down{ top:80%; transform: rotateX(-75deg); transform-origin: 0% 0%; }
-  .navbar .nav-item:hover .dropdown-menu{ transition: .9s; opacity:1; visibility:visible; top:100%; transform: rotateX(0deg); }
-  .mapa{width: 700px; height: 600px;}
-  .video-fluid{width: 700px; height: auto;}
-}*/
-
-
-/* Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) {}
-
-/* Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) {}
-
-/* Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) {.navbar .nav-item .dropdown-menu{  display:block; opacity: 0;  visibility: hidden; transition:.5s; margin-top:0;  }
-.navbar .dropdown-menu.fade-down{ top:80%; transform: rotateX(-75deg); transform-origin: 0% 0%; }
-.navbar .nav-item:hover .dropdown-menu{ transition: .9s; opacity:1; visibility:visible; top:100%; transform: rotateX(0deg); }
-.mapa{width: 700px; height: 600px;}
-.video-fluid{width: 700px; height: auto;}
-}
 /*
 /////
 /////
@@ -32,11 +8,17 @@
 /////
 /////
 */
-
+@media all and (min-width: 992px){
+  .navbar .nav-item .dropdown-menu{  display:block; opacity: 0;  visibility: hidden; transition:.5s; margin-top:0;  }
+    .navbar .dropdown-menu.fade-down{ top:80%; transform: rotateX(-75deg); transform-origin: 0% 0%; }
+  .navbar .nav-item:hover .dropdown-menu{ transition: .9s; opacity:1; visibility:visible; top:100%; transform: rotateX(0deg); }
+  .mapa{width: 700px; height: 600px;}
+  .video-fluid{width: 700px; height: auto;}
+}
 .navbar{
   font-weight: bold;
   /*Color de el menu*/
-  background-color: #D7D7D7;
+  background-color: rgb(172, 172, 172);
   /*Color del borde superior e inferior del menu*/
   border-top: 2px solid red;
   border-bottom: 2px solid red;
@@ -46,9 +28,9 @@
 
 .navbar .navbar-nav .dropdown-menu{
   /*Pequeño espacio entre el cuadro de menu y el submenu para que no choque con el borde el menu*/
-  margin-top: 10px;
+  margin-top: 9px;
   /*Color de los sub-menu*/
-  background-color:  #D7D7D7;
+  background-color:  rgb(172, 172, 172);
 }
 
 .navbar .navbar-nav .dropdown-menu a{
@@ -63,21 +45,90 @@
 
 .navbar .navbar-nav .dropdown-menu a:hover{
   /*Color del las letras de los sub-menu al pasar el clic*/
-  color: black;
+  color: rgb(172, 172, 172);
   /*Color del borde izquierdo de los sub-menu al pasar el clic*/
   border-left: 3px solid red;
 }
-/*
-/////
-/////
-/////
-///// Cuerpo del HTML (BODY)
-/////
-/////
-/////
-*/
+.container{
+  display:flex;
+  width: 30%;
+  height: 10%;
+  background:none;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-right: 1050px;
+
+}
+form{
+  display: flex;
+  flex-flow: column;
+  background:rgba(0,0,0,0.6);
+  background: radial-gradient(circle, rgba(130,130,130,0.7343312324929971) 0%, rgba(148,187,233,1) 100%);
+  width: 95%;
+  height: 50%;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  box-shadow:rgba(0, 0, 0, 8) 0px 0px 50px;
+  border-radius: 10px;
+}
+input,textarea{
+  border: none;
+  resize: none;
+  outline:none;
+  background:none;
+  padding: 15px 0px;
+  width: 80%;
+  margin: 20px;
+  transition: all 300ms;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+input:focus, textarea:focus{
+  border-bottom-color:rgba(9,9,121,1);
+  transition: 0.5s;
+}
+.btn-grad{
+  border: none;
+  outline: none;
+  padding: 15px;
+  width: 250px;
+  color: white;
+  border-radius: 2px;
+  box-shadow: rgba(0, 0, 0, 0.7);
+  margin: 20px 0px;
+  cursor: pointer;
+  transition: all 300ms;
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%,
+  rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+  
+}
+.btn-grad:hover{
+  transform: scale(1.05);
+  box-shadow:rgba(0, 0, 0, 9) 0 0 0 2px;
+}
+/* posicion cuadro container */
+.containerxx{
+  width: 1000px;
+  height: 500px;
+  float: right;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  margin-right:10px;
+}
+/* posicion imagen*/
+.carouselslide{
+  width: 900px;
+  height: 900px;
+  margin-right: 1px;
+  margin-top:500px;
+  border-radius: 2px;
+}
 body{
-  background: #FFF;
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%,
+  rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
 }
 
 h1{font-size: 66px; font-weight: 600; line-height: 80px;}
@@ -94,8 +145,29 @@ section{
   padding: 120px 0;
 }
 
+#inicio{
+  background-image: url('imagenes/Body/Fondo.jpg');
+  background-size: cover;
+  padding-top: 90px;
+  min-height: 700px;
+  color: white;
+}
+
+#inicio p{
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+
+#inicio h1{
+  font-family: 'Playfair Display Black Italic',arial;
+  font-size: 80px;
+}
+
 #objetivo{
-  background-color: #c7c7c7;
+  background-color: teal;
 }
 
 #objetivo p{
@@ -110,7 +182,7 @@ section{
 
 #trabajamos{
   background-color: thistle;
-  background-image: url('imagenes/Body/Fondo3.jpg');
+  background-image: url('imagenes/Body/Fondo2.jpg');
   background-size: cover;
   min-height: 400px;
 }
@@ -138,7 +210,7 @@ width: 100%;
 height: 100%;
 }
 #contactenos{
-  background-image: url('imagenes/Body/Fondo4.jpg');
+  background-image: url('imagenes/Body/Fondo3.jpg');
   min-height: 800px;
 }
 
@@ -155,17 +227,19 @@ height: 100%;
   margin-top: 100px;
 }
 
+.contenido-inicio{
+  max-width: 800px;
+  /*top - right - bottom - lef*/
+  margin: auto;
+  text-align: center;
+  float: right;
+}
 
 .contenido-central{
   max-width: 800px;
   /*top - right - bottom - lef*/
   margin: auto;
   text-align: center;
-}
-
-.mapa{
-  width: 100%;
-  height: 600px;
 }
 
 

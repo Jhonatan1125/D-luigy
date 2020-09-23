@@ -5,14 +5,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>D'Luigy</title>
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="estilo2.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="Estilo1.css">
   <link rel="shortcut icon" type="ico" href="Imagenes/Body/Logo-pagina-ico.ico">
   <script src="https://kit.fontawesome.com/009a48175d.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <!--INICIO DEL MENU-->
+  
+  <!--FIN DEL MENU-->
   <nav class="navbar navbar-expand-lg navbar-light navbar-toggleable-sm sticky-top">
 
     <a class="navbar-brand" href="Index.html" style="margin: 0px; padding: 0px;"><img src="Imagenes/Body/Logo-ico.ico"
@@ -60,23 +62,38 @@
       </div>
     </div>
   </nav>
-  <!--FIN DEL MENU-->
-
   <!--INICIO DEL CUERPO-->
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-6">
-        <img class="Imagen-error" src="Imagenes/Body/Error_404.png" alt="Imagen-error-404">
-      </div>
-      <div class="col-lg-6 text-center texto-error">
-        <h1>Lo sentimos página no disponible </h1><br>
-        <p> La página a la que intentas ingresar no se encuentra disponible <br> Estamos trabajando en ello. :)</p>
-        <br><br><br><a href="Index.html"><button class="button-error"><b>Volver al Inicio</b></button></a><br><br><br><br>
-      </div>
-    </div>
-  </div>
-  <!--FIN DEL CUERPO-->
 
+  <!--FIN DEL CUERPO-->
+    <!--INICIO DEL SLIDES-->
+    <div class="containerxx">
+      <div id="carouselExampleSlidesOnly" class="carouselslide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100"src="https://mdbootstrap.com/img/Photos/Slides/img%20(35).jpg">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100"src="https://mdbootstrap.com/img/Photos/Slides/img%20(33).jpg">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100"  src="https://mdbootstrap.com/img/Photos/Slides/img%20(31).jpg">
+          </div>
+        </div>
+      </div>
+     </div>
+          <div class="container">
+            <form>
+              <h3>Soporte Tecnico <span><i class="fas fa-headset"></i></span></h3>
+              <input class="form control" type="text" placeholder="Nombre" class="fas fa-headset">
+              <input class="form control" type="text" placeholder="Telefono">
+              <input class="form control" type="text" placeholder="Email">
+              <input class="form control" type="text" placeholder="Mensaje">
+              <button type="button" class="btn-grad" onclick="enviar()">Enviar</button>
+            </form>
+          </div>
+        </div>
+    
+  <br>
   <!--INICIO DEL FOOTER-->
   <footer class="site-footer">
     <div class="container-fluid">
@@ -132,8 +149,11 @@
   </footer>
   <!--FIN DEL FOOTER-->
 
-  <script src="js/jquery.js"></script>
-  <script src="js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <script src="js/sweetalert.min.js"></script>
+  <script src="js/enviado.js"></script>
 </body>
 
 </html>
