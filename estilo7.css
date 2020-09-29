@@ -1,0 +1,19 @@
+
+body{
+    background:white;
+    padding: 0px;
+    margin: 0px;
+    font-family:"Arial"
+}
+.container{
+    margin-top: 0%;
+    float: center;
+}
+.containerx{
+   background: black;
+   margin-top: 8%;
+   width: 100%;
+   height: 300px;
+}
+
+
