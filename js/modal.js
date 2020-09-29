@@ -1,12 +1,4 @@
 
-$(document).ready(function(){
-  $("#myInput").on("keyup", function() {
-    var value = $(this).val().toLowerCase();
-    $("#inventarioBarra tr").filter(function() {
-      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-    });
-  });
-});
 
 letras = /[a-zA-Z ]/;
 	alfanumerico = /^[a-zA-Z0-9_]*$/
@@ -33,6 +25,14 @@ if
 
 });
 
+}
+
+if(!letras.test(nombreProducto)){
+  swal("El campo  nombre no puede contener caracteres ilegales");
+  return false;
+}if(!letras.test(descripcion)){
+  swal("El campo  nombre no puede contener caracteres ilegales");
+  return false;
 }
  
   

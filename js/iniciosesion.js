@@ -1,14 +1,17 @@
 function validacioninicio(){
     var usuario = document.getElementById('usuario').value;
     var contraseña = document.getElementById('contraseñainicio').value;
+   
     
-    if(usuario === '' || contraseña === ''){
+    if(usuario === 'admin12@gmail.com' || contraseña === '12345'){
+        window.location.href="Interfaz-Administrador.html";
 
+    }else{
         swal({
             title: 'Incorrecto',
             input: 'checkbox',
-            icon: "error",
-            text: "Los campos son obligatorios",
+            icon: "warning",
+            text: "Los datos ingresados son incorrectos",
             button: true
         });
       return false;      
