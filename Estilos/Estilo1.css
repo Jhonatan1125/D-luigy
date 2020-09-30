@@ -63,14 +63,14 @@
 form{
   display: flex;
   flex-flow: column;
-  background:rgba(0,0,0,0.6);
-  background: radial-gradient(circle, rgba(130,130,130,0.7343312324929971) 0%, rgba(148,187,233,1) 100%);
+  color:rgba(0,0,0,0.6);
+  background: white;
   width: 95%;
   height: 50%;
   padding: 20px;
   justify-content: center;
   align-items: center;
-  box-shadow:rgba(0, 0, 0, 8) 0px 0px 50px;
+  box-shadow:rgba(0, 0, 0, 8) 0px 0px 20px;
   border-radius: 10px;
 }
 input,textarea{
@@ -85,7 +85,7 @@ input,textarea{
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 input:focus, textarea:focus{
-  border-bottom-color:rgba(9,9,121,1);
+  border-bottom-color: aqua;
   transition: 0.5s;
 }
 .btn-grad{
@@ -99,8 +99,7 @@ input:focus, textarea:focus{
   margin: 20px 0px;
   cursor: pointer;
   transition: all 300ms;
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%,
-  rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+  background: rgba(0,212,255,1)
   
 }
 .btn-grad:hover{
@@ -127,8 +126,7 @@ input:focus, textarea:focus{
   border-radius: 2px;
 }
 body{
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%,
-  rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+  background: blanchedalmond;
 }
 
 h1{font-size: 66px; font-weight: 600; line-height: 80px;}
