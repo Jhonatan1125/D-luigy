@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="esp">
+
+<head>
+  <title>Productos</title>
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, user-scalable=no,
+      initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+  <script src="js/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css2/tablaAdmin.css">
+  <link rel="stylesheet" href="../Estilos/estilo5.css">
+  <link rel="shortcut icon" type="ico" href="Imagenes/Body/Logo-pagina-ico.ico">
+  <script src="https://kit.fontawesome.com/009a48175d.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+  <!--INICIO DEL CUERPO-->
+  <div class="container-fluid">
+    <div class="row">
+
+      <div class="col-md-2">
+        <div class="row menu-lateral">
+          <div class="col-md-12 col-sm-1 text-center logo-menu-lateral">
+            <a href="Interfaz-Administrador.html"><img src="./Imagenes/Body/Logo-ico.ico" alt="Logo D'Luigy"
+                width="70px" height="40px"></a>
+          </div>
+
+          <div class="col-md-12 col-sm-11 contenido-lateral">
+            <ul class="nav nav-pills flex-column">
+              <li class="nav-item text-center">
+                <a class="nav-link" data-toggle="collapse" href="#item-1">PAGINA WEB <i class="fas fa-globe"></i></a>
+                <div id="item-1" class="collapse">
+                  <ul class="nav flex-column ml-3">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"><i class="fas fa-arrow-circle-right"></i>Mundo D'Luigy</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"><i class="fas fa-arrow-circle-right"></i>Tienda</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"><i class="fas fa-arrow-circle-right"></i>Otras Paginas</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+
+            <ul class="nav nav-pills flex-column">
+              <li class="nav-item text-center">
+                <a class="nav-link" data-toggle="collapse" href="#item-2">INVENTARIO <i
+                    class="fas fa-dolly-flatbed"></i></a>
+                <div id="item-2" class="collapse">
+                  <ul class="nav flex-column ml-3">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"><i class="fas fa-arrow-circle-right"></i>Productos</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"><i class="fas fa-arrow-circle-right"></i>Pedidos</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="historialAdmin.html"><i
+                          class="fas fa-arrow-circle-right"></i>Historial</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+
+            <ul class="nav nav-pills flex-column">
+              <li class="nav-item text-center">
+                <a class="nav-link" data-toggle="collapse" href="#item-3">VENTAS <i
+                    class="fas fa-file-invoice-dollar"></i></a>
+                <div id="item-3" class="collapse">
+                  <ul class="nav flex-column ml-3">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"><i class="fas fa-arrow-circle-right"></i>Ventas Totales</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"><i class="fas fa-arrow-circle-right"></i>ventas del mes</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="historialCliente.html"><i
+                          class="fas fa-arrow-circle-right"></i>Historial de venta</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+
+            <ul class="nav nav-pills flex-column">
+              <li class="nav-item text-center">
+                <a class="nav-link" data-toggle="collapse" href="#item-4">FIDELIZACION <i
+                    class="fas fa-user-tag"></i></a>
+                <div id="item-4" class="collapse">
+                  <ul class="nav flex-column ml-3" style="padding: 0px;">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"><i class="fas fa-arrow-circle-right"></i>Clientes</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"><i class="fas fa-arrow-circle-right"></i>Puntajes</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"><i class="fas fa-arrow-circle-right"></i>Descuentos</a>
+                    </li>
+                  </ul>
+
+                </div>
+              </li>
+            </ul>
+            <ul class="nav nav-pills flex-column">
+              <li class="nav-item text-center">
+                <a class="nav-link" data-toggle="collapse" href="#item-5">REPORTES <i class="fa fa-file-code-o"
+                    aria-hidden="true"></i>
+                  <div id="item-4" class="collapse">
+                    <ul class="nav flex-column ml-3" style="padding: 0px;">
+                      <li class="nav-item">
+                        <a class="nav-link" href="reporte.html"><i class="fas fa-arrow-circle-right"></i>Clientes</a>
+                      </li>
+
+                    </ul>
+
+                  </div>
+              </li>
+            </ul>
+            <ul class="nav nav-pills flex-column">
+              <li class="nav-item text-center">
+                <a class="nav-link" data-toggle="collapse" href="#item-6">CERRAR SESIÓN <i class="fa fa-sign-out"
+                    aria-hidden="true"></i>
+                  <div id="item-4" class="collapse">
+                    <ul class="nav flex-column ml-3" style="padding: 0px;">
+                      <li class="nav-item">
+                        <a class="nav-link" href="Interfaz-Administrador.html"><i
+                            class="fas fa-arrow-circle-right"></i>Salir</a>
+                      </li>
+                    </ul>
+                  </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-10" style="background-color: cyan;">
+        <div class="container ">
+          <div class="row">
+
+            <div class="col-xl-12 animated zoomInDown delay-1s  Inicio">
+
+              <h1 class="text-center margen pt-3" style="color: black;">Inventario</h1>
+            </div>
+
+          </div>
+        </div>
+
+        <div class=" container pt-3">
+          <div class="row">
+
+            <div class="order-1  col-xl-8 col-lg-8 col-sm-12 col-md-10 mb-3  animated zoomInDown delay-1s ">
+              <table id="citasBarra" class=" table-responsive-md table table-striped fondo"
+                style="background-color: white;">
+                <input class="form-control mb-3 fondo" id="myInput2" type="text" placeholder="Buscar..">
+                <thead class="thead-dark">
+                  <tr>
+                    <th>Numeración</th>
+                    <th>Nombre producto</th>
+                    <th>Descripción</th>
+                    <th>Talla</th>
+                    <th>Color</th>
+                    <th>Precio unidad</th>
+                  </tr>
+                </thead>
+                <tbody>
+
+                  <tr>
+                    <td>1</td>
+                    <td>Blazer</td>
+                    <td>Blazer hecho de pana</td>
+                    <td>34</td>
+                    <td>Café</td>
+                    <td>$80.000</td>
+
+
+
+                  <tr>
+                    <td>2</td>
+                    <td>Pantalón</td>
+                    <td>Pantalón de seda</td>
+                    <td>12</td>
+                    <td>Negro</td>
+                    <td>$70.0000</td>
+
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Zapato elegante</td>
+                    <td>Zapato de gamusa </td>
+                    <td>39</td>
+                    <td>Miel</td>
+                    <td>$120.000</td>
+
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>Correa</td>
+                    <td>Correa de cuero</td>
+                    <td></td>
+                    <td>Café</td>
+                    <td>$50.000</td>
+
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>Corbata</td>
+                    <td>Corbata con rayas</td>
+                    <td></td>
+                    <td>Morada</td>
+                    <td>$30.000</td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>Blusa</td>
+                    <td>Blusa en tela con abertura en la espalda</td>
+                    <td>S </td>
+                    <td>Rosada</td>
+                    <td>$65.000</td>
+
+
+                  </tr>
+                  </tr>
+
+
+                </tbody>
+              </table>
+
+
+            </div>
+
+
+
+            <div class=" order-2  col-xl-3 col-lg-3 col-md-10   mt-5  ">
+              <button id="cancelar" data-toggle="modal" data-target="#registro"
+                class="btn-dark mt-3 pt-2 pb-2  fondo d-botonp rounded-lg btn-block">
+                Registrar producto
+
+              </button>
+              <button data-toggle="modal" data-toggle="modal" data-target="#inventario"
+                class="btn-dark mt-3  pt-2 pb-2 fondo d-botonp rounded-lg btn-block  ">
+                Modificar producto
+              </button>
+              <button id="eliminarProducto" data-toggle="modal" data-target="#eliminar"
+                class="btn-dark mt-3  pt-2 pb-2 fondo  rounded-lg btn-block  ">
+                Eliminar producto
+              </button>
+              <button id="verProducto" onclick="location.href='productosRegistrados.html';"
+                class="btn-dark mt-3  pt-2 pb-2 fondo  rounded-lg btn-block  ">
+                Ver productos registrados
+              </button>
+
+
+
+            </div>
+
+
+
+
+
+
+
+            <div class="modal animated slideInLeft" id="inventario" tabindex="-1" role="dialog"
+              aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content fondo rounded-lg">
+                  <div class="modal-header" style="background: #000;">
+                    <h5 class="modal-title letra-modal" id="exampleModalLabel">Modificar
+                      producto</h5>
+                    <button type="button" class="close" style="color: #fff;" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">Nombre
+                          producto:</label>
+                        <input id="nombreProducto" type="text" class="form-control" placeholder="">
+
+                        <label for="recipient-name" class="col-form-label">Descripción:</label>
+                        <input id="descripcion" autocomplete="off" type="text" class="form-control jh-date"
+                          placeholder="">
+                        <label for="recipient-name" class="col-form-label">Talla:</label>
+                        <input id="talla" style="background: #fff;" autocomplete="off" type="text" class="form-control"
+                          placeholder="">
+
+                        <label for="recipient-name" class="col-form-label">Color:</label>
+                        <input id="Color" type="text" class="form-control" placeholder="">
+
+                        <label for="recipient-name" class="col-form-label">Precio
+                          unitario:</label>
+                        <input id="precioUnitario" type="text" class="form-control" placeholder="">
+                      </div>
+
+
+
+                    </form>
+                  </div>
+                  <div class="modal-footer" style="background: #000;">
+                    <button type="button" class="btn btn-secondary pb-3 pt-3" data-dismiss="modal">Cerrar</button>
+                    <button onclick="modificarProducto()" type="button" class="btn
+              btn-primary btn-dark d-botonp pb-3 pt-3">Guardar cambios</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="modal animated slideInLeft" id="registro" tabindex="-1" role="dialog"
+              aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content fondo rounded-lg">
+                  <div class="modal-header" style="background: #000;">
+                    <h5 class="modal-title letra-modal" id="exampleModalLabel">Registrar
+                      producto</h5>
+                    <button type="button" class="close" style="color: #fff;" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">Nombre
+                          producto:</label>
+                        <input id="nombreProducto2" type="text" class="form-control" placeholder="">
+
+                        <label for="recipient-name" class="col-form-label">Descripción:</label>
+                        <input id="descripcion2" autocomplete="off" type="text" class="form-control jh-date"
+                          placeholder="">
+                        <label for="recipient-name" class="col-form-label">Talla:</label>
+                        <input id="talla2" style="background: #fff;" autocomplete="off" type="text" class="form-control"
+                          placeholder="">
+
+                        <label for="recipient-name" class="col-form-label">Color:</label>
+                        <input id="Color2" type="text" class="form-control" placeholder="">
+
+                        <label for="recipient-name" class="col-form-label">Precio
+                          unitario:</label>
+                        <input id="precioUnitario2" type="text" class="form-control" placeholder="">
+
+                      </div>
+
+                    </form>
+                  </div>
+                  <div class="modal-footer" style="background: #000;">
+                    <button type="button" class="btn btn-secondary pb-3 pt-3" data-dismiss="modal">Cerrar</button>
+                    <button onclick="registrarProducto()" type="button" class="btn
+              btn-primary btn-dark d-botonp pb-3 pt-3">Guardar cambios</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+            <div class="modal animated slideInLeft" id="eliminar" tabindex="-1" role="dialog"
+              aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content fondo rounded-lg">
+                  <div class="modal-header" style="background: #000;">
+                    <h5 class="modal-title letra-modal" id="exampleModalLabel">Eliminar
+                      registro inventario</h5>
+                    <button type="button" class="close" style="color: #fff;" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">Ingrese
+                          el id del registro:</label>
+                        <input id="idRegistro" type="text" class="form-control">
+                      </div>
+
+                    </form>
+                  </div>
+                  <div class="modal-footer" style="background: #000;">
+                    <button type="button" class="btn btn-secondary pb-3 pt-3" data-dismiss="modal">Cerrar</button>
+                    <button onclick="eliminarRegistro()" type="button" class="btn
+              btn-primary btn-dark d-botonp pb-3 pt-3">Guardar cambios</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+  <!--FIN DEL CUERPO-->
+
+
+
+
+  <footer class="site-footer  col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 ">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h6>Sobre Nosotros</h6>
+          <p class="text-justify">Prendas hechas en Colombia con una gran calidad y diseño. Para inspirar a las damas y
+            caballeros modernos. <br>Ropa formal, zapatos, correas, camisas, corbatas y mucha más variedad.</p>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Articulos</h6>
+          <ul class="footer-links">
+            <li><a href="#">Zapatos</a></li>
+            <li><a href="#">Vestidos</a></li>
+            <li><a href="#">Trajes</a></li>
+            <li><a href="#">Camisas</a></li>
+            <li><a href="#">Pantalones</a></li>
+            <li><a href="#">Accesorios</a></li>
+          </ul>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Links</h6>
+          <ul class="footer-links">
+            <li><a href="#">Sobre Nosotros</a></li>
+            <li><a href="#">Contactenos</a></li>
+            <li><a href="#">Tienda</a></li>
+            <li><a href="#">Guias</a></li>
+            <li><a href="#">Soporte Tecnico</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p>Copyright &copy; 2020 Todos los derechos reservados para D'Luigy.</p>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <ul class="social-icons">
+            <li><a href="#"><img class="Ico-redessociales" src="imagenes/Footer/ico-facebook.ico"
+                  alt="D'Luigy facebook"></a></li>
+            <li><a href="#"><img class="Ico-redessociales" src="imagenes/Footer/Ico-instagram.ico"
+                  alt="D'Luigy instagram"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+
+  <script src="../js/jquery-3.5.1.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/graficoProductos.js"></script>
+  <script src="../js/modal.js"></script>
+  <script src="../js/sweetalert.min.js"></script>
+  <script src="../js/filtro.js"></script>
+
+
+
+
+</body>
+
+</html>
