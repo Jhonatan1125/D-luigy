@@ -46,7 +46,7 @@ ul a{
 }
 
 ul a:hover{
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.329);
   color: white;
 }
 
@@ -60,6 +60,9 @@ ul a:hover{
 
 .logo-menu-lateral{
   padding-top: 20px;
+  background-color: rgb(175, 174, 174);
+  height: 70px;
+  border-bottom: 3px solid red;
 }
 
 .contenido-lateral{
@@ -73,7 +76,7 @@ ul a:hover{
 
 .buscar-form{
   float: right;
-  color: white;
+  color: black;
 }
 
 
