@@ -80,16 +80,15 @@
 */
 /* Estilo de Slides*/
 .container1{
-  margin-top: 20px;
   padding: 0px;
-  width: 90%;
-  height: 400px;
+  width: 100%;
+  height: 500px;
 }
 
 .slider-top{
-  margin-top: 20px;
-  width: 100%;
-  height: 500px;
+  margin: 0%;
+  width: 90%;
+  height: 700px;
 }
 /* Estilo de Slides*/
 
@@ -120,13 +119,13 @@ p{
 }
 #team .card{
   border-radius: 0;
-  box-shadow: 5px 5px 10px #3366cc;
+  box-shadow: 5px 5px 10px #26272b;
   transition: all 0,3s ease-in;
   -webkit-transition: all 0.3 ease-in;
   -moz-transition: all 0.3s ease in;
 }
 #team .card:hover{
-  background: #3366cc;
+  background: #26272b;
   color: #fff;
   border-radius: 5px;
   border: none;
@@ -146,6 +145,11 @@ p{
   margin: 0%;
   margin-left: 100px;
 }
+.containeru{
+  width: 90%;
+  margin-left: 100px;
+  margin-top: 40px;
+}
 section{
   padding: 100px 0 0;
 }
@@ -156,7 +160,7 @@ section{
   box-shadow: 0 5px 15px rgba(34, 32, 32, 0.5);
 }
 .card .post-image{
-  height: 700px;
+  height: 280px;
   overflow: hidden;
 }
 .card .post-image img{
@@ -167,8 +171,8 @@ section{
 }
 .card .new-content{
   position: absolute;
-  bottom: -150px;
-  padding: 20px;
+  bottom: -50px;
+  padding: 24px;
   background: #ffffff;
   transition: .5s;
 }
@@ -226,7 +230,8 @@ a:hover {
   text-decoration: none;
 }
 .container5{
-  margin-top: 70px;
+  margin-top: 100px;
+  margin-left: 50px;
 }
 section{
   padding: 180px 0;
