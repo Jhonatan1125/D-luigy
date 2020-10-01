@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="esp">
+
 <head>
 	<title>Reportes</title>
 	<meta charset="utf-8">
@@ -7,477 +8,522 @@
 
 	<meta name="viewport" content="width=device-width, user-scalable=no,
 	 initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-	 	<script src="js/jspdf.min.js"></script>
-	 	<script src="js/jspdf.plugin.autotable.js"></script>
-	 	<script src="js/tableHTMLExport.js"></script>
-	 	<script src="js/xlsx.full.min.js"></script>
-        <script src="js/FileSaver.min.js"></script>
-        <script src="js/tableexport.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"></script>
+	<script src="../js/jspdf.min.js"></script>
+	<script src="../js/jspdf.plugin.autotable.js"></script>
+	<script src="../js/tableHTMLExport.js"></script>
+	<script src="../js/xlsx.full.min.js"></script>
+	<script src="../js/FileSaver.min.js"></script>
+	<script src="../js/tableexport.min.js"></script>
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-	 <!--link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"-->
 
-	  <link rel="stylesheet" href="./css/bootstrap.min.css">
- 
-  <link rel="stylesheet" href="./css2/tablaAdmin.css">
-  <link rel="stylesheet" href="./css2/Estilo.css">
-  <link rel="stylesheet" href="./css2/estilo5.css">
 
-  <link rel="shortcut icon" type="ico" href="Imagenes/Body/Logo-pagina-ico.ico">
-  <script src="https://kit.fontawesome.com/009a48175d.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+
+	<link rel="stylesheet" href="../Estilos/tablaAdmin.css">
+	<link rel="stylesheet" href="../Estilos/estilo5.css">
+
+	<link rel="shortcut icon" type="ico" href="../Imagenes/Body/Logo-pagina-ico.ico">
+	<script src="https://kit.fontawesome.com/009a48175d.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-  <!--INICIO DEL CUERPO-->
-  <div class="container-fluid">
-    <div class="row">
+	<!--INICIO DEL CUERPO-->
+	<div class="container-fluid">
+		<div class="row">
 
-      <div class="col-md-2">
-        <div class="row menu-lateral">
-          <div class="col-md-12 col-sm-1 text-center logo-menu-lateral">
-            <a href="Interfaz-Administrador.html"><img src="./Imagenes/Body/Logo-ico.ico" alt="Logo D'Luigy"
-                width="70px" height="40px"></a>
-          </div>
-          
-          <div class="col-md-12 col-sm-11 contenido-lateral">
-            <ul class="nav nav-pills flex-column">
-              <li class="nav-item text-center">
-                <a class="nav-link" data-toggle="collapse" href="#item-1">PAGINA WEB <i class="fas fa-globe"></i></a>
-                <div id="item-1" class="collapse">
-                  <ul class="nav flex-column ml-3">
-                    <li class="nav-item">
-                      <a class="nav-link" href="#"><i class="fas fa-arrow-circle-right"></i>Mundo D'Luigy</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#"><i class="fas fa-arrow-circle-right"></i>Tienda</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#"><i class="fas fa-arrow-circle-right"></i>Otras Paginas</a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-            </ul>
+			<div class="col-md-2">
+				<div class="row menu-lateral">
+					<div class="col-md-12 col-sm-1 text-center logo-menu-lateral">
+						<a href="Interfaz-Administrador.html"><img src="../Imagenes/Body/Logo-ico.ico"
+								alt="Logo D'Luigy" width="70px" height="40px"></a>
+					</div>
 
-            <ul class="nav nav-pills flex-column">
-              <li class="nav-item text-center">
-                <a class="nav-link" data-toggle="collapse" href="#item-2">INVENTARIO <i
-                    class="fas fa-dolly-flatbed"></i></a>
-                <div id="item-2" class="collapse">
-                  <ul class="nav flex-column ml-3">
-                    <li class="nav-item">
-                      <a class="nav-link" href="#"><i class="fas fa-arrow-circle-right"></i>Productos</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#"><i class="fas fa-arrow-circle-right"></i>Pedidos</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="historialAdmin.html"><i class="fas fa-arrow-circle-right"></i>Historial</a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-            </ul>
+					<div class="col-md-12 col-sm-11 contenido-lateral">
+						<ul class="nav nav-pills flex-column">
+							<li class="nav-item text-center">
+								<a class="nav-link" data-toggle="collapse" href="#item-1">PAGINA WEB <i
+										class="fas fa-globe"></i></a>
+								<div id="item-1" class="collapse">
+									<ul class="nav flex-column ml-3">
+										<li class="nav-item">
+											<a class="nav-link" href="#"><i class="fas fa-arrow-circle-right"></i>Mundo
+												D'Luigy</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#"><i
+													class="fas fa-arrow-circle-right"></i>Tienda</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#"><i class="fas fa-arrow-circle-right"></i>Otras
+												Paginas</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
 
-            <ul class="nav nav-pills flex-column">
-              <li class="nav-item text-center">
-                <a class="nav-link" data-toggle="collapse" href="#item-3">VENTAS <i
-                    class="fas fa-file-invoice-dollar"></i></a>
-                <div id="item-3" class="collapse">
-                  <ul class="nav flex-column ml-3">
-                    <li class="nav-item">
-                      <a class="nav-link" href="#"><i class="fas fa-arrow-circle-right"></i>Ventas Totales</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#"><i class="fas fa-arrow-circle-right"></i>ventas del mes</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="historialCliente.html"><i class="fas fa-arrow-circle-right"></i>Historial de venta</a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-            </ul>
+						<ul class="nav nav-pills flex-column">
+							<li class="nav-item text-center">
+								<a class="nav-link" data-toggle="collapse" href="#item-2">INVENTARIO <i
+										class="fas fa-dolly-flatbed"></i></a>
+								<div id="item-2" class="collapse">
+									<ul class="nav flex-column ml-3">
+										<li class="nav-item">
+											<a class="nav-link" href="#"><i
+													class="fas fa-arrow-circle-right"></i>Productos</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#"><i
+													class="fas fa-arrow-circle-right"></i>Pedidos</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="historialAdmin.html"><i
+													class="fas fa-arrow-circle-right"></i>Historial</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
 
-            <ul class="nav nav-pills flex-column">
-              <li class="nav-item text-center">
-                <a class="nav-link" data-toggle="collapse" href="#item-4">FIDELIZACION <i
-                    class="fas fa-user-tag"></i></a>
-                <div id="item-4" class="collapse">
-                  <ul class="nav flex-column ml-3" style="padding: 0px;">
-                    <li class="nav-item">
-                      <a class="nav-link" href="#"><i class="fas fa-arrow-circle-right"></i>Clientes</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#"><i class="fas fa-arrow-circle-right"></i>Puntajes</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#"><i class="fas fa-arrow-circle-right"></i>Descuentos</a>
-                    </li>
-                  </ul>
-                  
-                </div>
-              </li>
-            </ul>
-            <ul class="nav nav-pills flex-column">
-              <li class="nav-item text-center">
-                <a class="nav-link" data-toggle="collapse" href="#item-5">REPORTES<i class="fa fa-file-code-o" aria-hidden="true"></i>
-                <div id="item-4" class="collapse">
-                  <ul class="nav flex-column ml-3" style="padding: 0px;">
-                    <li class="nav-item">
-                      <a class="nav-link" href="reporte.html"><i class="fas fa-arrow-circle-right"></i>Clientes</a>
-                    </li>
-                    
-                  </ul>
-                  
-                </div>
-              </li>
-            </ul>
-            <ul class="nav nav-pills flex-column">
-              <li class="nav-item text-center">
-                <a class="nav-link" data-toggle="collapse" href="#item-6">CERRAR SESIÓN<i class="fa fa-sign-out" aria-hidden="true"></i>
-                <div id="item-4" class="collapse">
-                  <ul class="nav flex-column ml-3" style="padding: 0px;">
-                    <li class="nav-item">
-                      <a class="nav-link" href="Interfaz-Administrador.html"><i class="fas fa-arrow-circle-right"></i>Salir</a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
+						<ul class="nav nav-pills flex-column">
+							<li class="nav-item text-center">
+								<a class="nav-link" data-toggle="collapse" href="#item-3">VENTAS <i
+										class="fas fa-file-invoice-dollar"></i></a>
+								<div id="item-3" class="collapse">
+									<ul class="nav flex-column ml-3">
+										<li class="nav-item">
+											<a class="nav-link" href="#"><i class="fas fa-arrow-circle-right"></i>Ventas
+												Totales</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#"><i class="fas fa-arrow-circle-right"></i>ventas
+												del mes</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="historialCliente.html"><i
+													class="fas fa-arrow-circle-right"></i>Historial de venta</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
 
-      <div class="col-md-10"  style="background-color:  rgb(240, 240, 240); ">
-	     
+						<ul class="nav nav-pills flex-column">
+							<li class="nav-item text-center">
+								<a class="nav-link" data-toggle="collapse" href="#item-4">FIDELIZACION <i
+										class="fas fa-user-tag"></i></a>
+								<div id="item-4" class="collapse">
+									<ul class="nav flex-column ml-3" style="padding: 0px;">
+										<li class="nav-item">
+											<a class="nav-link" href="#"><i
+													class="fas fa-arrow-circle-right"></i>Clientes</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#"><i
+													class="fas fa-arrow-circle-right"></i>Puntajes</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#"><i
+													class="fas fa-arrow-circle-right"></i>Descuentos</a>
+										</li>
+									</ul>
 
+								</div>
+							</li>
+						</ul>
 
-	    <div class="container pt-3">
-	    	<div class="row">
-	    				
-	    			<div class="col-xl-12 animated zoomInDown delay-1s  Inicio">	
+						<ul class="nav nav-pills flex-column">
+							<li class="nav-item text-center">
+								<a class="nav-link" data-toggle="collapse" href="#item-5">REPORTES <i
+										class="fa fa-file-code-o" aria-hidden="true"></i></a>
+								<div id="item-5" class="collapse">
+									<ul class="nav flex-column ml-3" style="padding: 0px;">
+										<li class="nav-item">
+											<a class="nav-link" href="historialAdmin.html"><i
+													class="fas fa-arrow-circle-right"></i>Reporte</a>
+										</li>
+									</ul>
 
-	    				<h1   class="text-center margen pt-3" style="color: black;">Reportes</h1>
-	    			</div>	
+								</div>
+							</li>
+						</ul>
 
-	    	</div>
-	    </div>
-	     
-        
-	     <div class="container pt-3">
-	     	<div class="row">
+						<ul class="nav nav-pills flex-column">
+							<li class="nav-item text-center">
+								<a class="nav-link" data-toggle="collapse" href="#item-6">CERRAR SESIÓN <i
+										class="fa fa-sign-out" aria-hidden="true"></i></a>
+								<div id="item-6" class="collapse">
+									<ul class="nav flex-column ml-3" style="padding: 0px;">
+										<li class="nav-item">
+											<a class="nav-link" href="../Index.html"><i
+													class="fas fa-arrow-circle-right"></i>SALIR</a>
+										</li>
+									</ul>
 
-	     		<div class="col-xl-8 col-lg-8 col-sm-12 col-md-10 mb-3 animated zoomInDown delay-1s" id="uno" style="display: none;">
-                     <table class=" table-responsive-md table table-striped  border border-dark fondo" style="background-color: white;" id="tablaVentas">
-                     	<input class="form-control mb-3 fondo" id="inputVentas" type="text" placeholder="Buscar..">
-						  <thead class="thead-dark">
-						    <tr>
-						      <th>Fecha</th>
-						      <th>Numero de factura</th>
-						      <th>Producto</th>
-						      <th>Cantidad</th>
-						      <th>Total</th>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
 
-						    </tr>
-						  </thead>
-						  <tbody>
-						    <tr>
-						      <td>20/02/2020</td>
-						      <td>123456</td>
-						      <td>Camisa rayas</td>
-						      <td>1</td>
-						      <td>$40.000</td>
-						      
-						    </tr>
-						    <tr>
-						      <td >02/02/2020</td>
-						      <td>12345</td>
-						      <td>Blusa dama</td>
-						      <td>2</td>
-						      <td>$80.000</td>
-						     
-						    </tr>
-						     <tr>
-						      <td >08/02/2019</td>
-						      <td>12345</td>
-						      <td>Correa</td>
-						      <td>5</td>
-						      <td>$120.000</td>
-						      
-						    </tr>
-						    <tr>
-						     <td >26/12/2018</td>
-						      <td>12345</td>
-						      <td>Corbata roja</td>
-						      <td>5</td>
-						      <td>$180.000</td>
-						      
-						    </tr>
-						    <tr>
-						      <td >20/02/2019</td>
-						      <td>12345</td>
-						      <td>Blazer</td>
-						      <td>1</td>
-						      <td>$80.000</td>
-						    
-						    </tr>
-						    <tr>
-						      <td >18/05/2020</td>
-						      <td>12345</td>
-						      <td>Pantalón</td>
-						      <td>2</td>
-						      <td>$150.000</td>
-						      
-						    </tr>
-						  </tbody>
-						</table>
-
-						<div class="text-center">
-
-							<button id="btnVentas" class="btn-dark mt-3 pt-2 pb-2  fondo d-botonp rounded-lg pl-4 pr-4">
-                				Exportar ventas a excel 
-                	     	</button>
-                	     	<button  id="pdfVentas" class="btn-dark mt-3 pt-2 pb-2  fondo d-botonp rounded-lg pl-4 pr-4 ml-4">
-                				Exportar ventas a pdf
-                	        </button>
-
-                	     </div>
-                	     
-	     		</div>
-
-
-	     		<div class="col-xl-8 col-lg-8 col-sm-12 col-md-10 mb-3 animated zoomInDown delay-1s" id="dos" style="display: block;" >
-                     <table class=" table-responsive-md table table-striped  border border-dark fondo" style="background-color: white;"                     id="tablaInventario">
-                     	<input class="form-control mb-3 fondo" id="inputInventario" type="text" placeholder="Buscar..">
-						  <thead class="thead-dark">
-						    <tr>
-						      <th >Fecha entrada</th>
-						      <th >Producto</th>
-						      <th >Descripción</th>
-						      <th >Cantidad</th>
-						      <th >Valor U.</th>
-						      <th >Valor total</th>
-						     
-						    </tr>
-						  </thead>
-						  <tbody>
-						    <tr>
-						      <td >20/02/2020</td>
-						      <td>Blazer</td>
-						      <td>REF 12</td>
-						      <td>20</td>
-						      <td>$60.000</td>
-						      <td>$1'000.000</td>
-						    </tr>
-						    <tr>
-						      <td >15/01/2020</td>
-						      <td>Camisa de rayas</td>
-						      <td>REF 122</td>
-						      <td>30</td>
-						      <td>$35.000</td>
-						      <td>$1'050.000</td>
-						     
-						    </tr>
-						    <tr>
-						      <td >25/12/2020</td>
-						      <td>Correa</td>
-						      <td>REF 1562</td>
-						      <td>100</td>
-						      <td>$20.000</td>
-						      <td>$2'000.000</td>
-						    </tr>
-						    <tr>
-						      <td >16/08/2020</td>
-						      <td>Corbatas</td>
-						      <td>REF 152</td>
-						      <td>2000</td>
-						      <td>$25.000</td>
-						      <td>$50'000.000</td>
-						    </tr>
-						    <tr>
-						      <td >15/02/2020</td>
-						      <td>Zapato elegante</td>
-						      <td>REF 182</td>
-						      <td>30</td>
-						      <td>$80.000</td>
-						      <td>2'400.000</td>
-						    </tr>
-						   
-						  </tbody>
-						</table>
-                         
-
-						<div class="text-center">
-
-						 <button  id="btnInventario" class="btn-dark mt-3 pt-2 pb-2  fondo d-botonp rounded-lg pl-4 pr-4">
-                				Exportar inventario a excel 
-                	     </button>
-                	     <button  id="pdfInventario" class="btn-dark mt-3 pt-2 pb-2  fondo d-botonp rounded-lg pl-4 pr-4 ml-4">
-                				Exportar inventario a pdf
-                	     </button>
-                	    </div>
-
-                	   
-
-	     		</div>
-	     		<div class="col-xl-8 col-lg-8 col-sm-12 col-md-10 mb-3 animated zoomInDown delay-1s" id="tres" style="display: none;" >
-                     <table class=" table-responsive-md table table-striped  border border-dark fondo" style="background-color: white;" 
-                     id="tablaFidelizacion">
-                     	<input class="form-control mb-3 fondo" id="inputFidelizacion" type="text" placeholder="Buscar..">
-						  <thead class="thead-dark">
-						    <tr>
-						      <th >Numeración</th>
-						      <th >Fecha </th>
-						      <th >Puntaje cliente</th>
-						      <th  >Puntaje Max</th>
-						     
-						    </tr>
-						  </thead>
-						  <tbody>
-						    <tr>
-						      <td >1</td>
-						      <td>15/02/2020</td>
-						      <td>50</td>
-						      <td>300</td>
-						     
-						      
-						    </tr>
-						    <tr>
-						      <td >2</td>
-						      <td>15/02/2019</td>
-						      <td>15</td>
-						      <td>300</td>
-						      
-						    </tr>
-						    <tr>
-						      <td >3</td>
-						      <td>15/12/2020</td>
-						      <td>0</td>
-						      <td></td>
-						      
-						    </tr>
-						    <tr>
-						      <td >4</td>
-						      <td>20/08/2020 </td>
-						      <td>60</td>
-						      <td>300</td>
-						      
-						    </tr>
-						    <tr>
-						      <td >5</td>
-						      <td>15/09/2019 </td>
-						      <td>100</td>
-						      <td>300</td>
-						      
-						    </tr>
-						  </tbody>
-						</table>
+			<div class="col-md-10" style="background-color:  rgb(240, 240, 240); ">
 
 
 
-						<div class="text-center">
+				<div class="container pt-3">
+					<div class="row">
 
-						 <button  id="btnFidelizacion" class="btn-dark mt-3 pt-2 pb-2  fondo d-botonp rounded-lg pl-4 pr-4">
-                				Exportar fidelización a excel 
-                	     </button>
-                	     <button  id="pdfFidelizacion" class="btn-dark mt-3 pt-2 pb-2  fondo d-botonp rounded-lg pl-4 pr-4 ml-4">
-                				Exportar fidelización a pdf
-                	     </button>
+						<div class="col-xl-12 animated zoomInDown delay-1s  Inicio">
 
+							<h1 class="text-center margen pt-3" style="color: black;">Reportes</h1>
+						</div>
 
-                	    </div>
-	     		</div>
-	     		
+					</div>
+				</div>
 
 
-	     		<div class="col-xl-4 col-lg-4 col-md-10 col-sm-12 col-12 mt-5  ">
+				<div class="container pt-3">
+					<div class="row">
 
-	     			        <button id="btnTabla1ID" onclick="reportes('uno');" class="btn-dark mt-3 pt-2 pb-2  fondo d-botonp rounded-lg btn-block ">
-                				Reporte ventas
-                			</button>
-                		    <button onclick="reportes('dos')" class=" btn-block btn-dark mt-3  pt-2 pb-2 fondo d-botonp rounded-lg">
-                				Reporte inventario
-                			</button>	
+						<div class="col-xl-8 col-lg-8 col-sm-12 col-md-10 mb-3 animated zoomInDown delay-1s" id="uno"
+							style="display: none;">
+							<table class=" table-responsive-md table table-striped  border border-dark fondo"
+								style="background-color: white;" id="tablaVentas">
+								<input class="form-control mb-3 fondo" id="inputVentas" type="text"
+									placeholder="Buscar..">
+								<thead class="thead-dark">
+									<tr>
+										<th>Fecha</th>
+										<th>Numero de factura</th>
+										<th>Producto</th>
+										<th>Cantidad</th>
+										<th>Total</th>
 
-                			 <button id="btnTabla1ID" onclick="reportes('tres');" class="btn-block btn-dark mt-3 pt-2 pb-2  fondo d-botonp rounded-lg">
-                				Reporte fidelización
-                			</button>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>20/02/2020</td>
+										<td>123456</td>
+										<td>Camisa rayas</td>
+										<td>1</td>
+										<td>$40.000</td>
 
-                            
-		
-	     		</div>
-	     	</div>
-	    </div>	
-      </div>
-    </div>
-  </div>
-        <footer class="site-footer  col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 ">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-12 col-md-6">
-          <h6>Sobre Nosotros</h6>
-          <p class="text-justify">Prendas hechas en Colombia con una gran calidad y diseño. Para inspirar a las damas y
-            caballeros modernos. <br>Ropa formal, zapatos, correas, camisas, corbatas y mucha más variedad.</p>
-        </div>
+									</tr>
+									<tr>
+										<td>02/02/2020</td>
+										<td>12345</td>
+										<td>Blusa dama</td>
+										<td>2</td>
+										<td>$80.000</td>
 
-        <div class="col-xs-6 col-md-3">
-          <h6>Articulos</h6>
-          <ul class="footer-links">
-            <li><a href="#">Zapatos</a></li>
-            <li><a href="#">Vestidos</a></li>
-            <li><a href="#">Trajes</a></li>
-            <li><a href="#">Camisas</a></li>
-            <li><a href="#">Pantalones</a></li>
-            <li><a href="#">Accesorios</a></li>
-          </ul>
-        </div>
+									</tr>
+									<tr>
+										<td>08/02/2019</td>
+										<td>12345</td>
+										<td>Correa</td>
+										<td>5</td>
+										<td>$120.000</td>
 
-        <div class="col-xs-6 col-md-3">
-          <h6>Links</h6>
-          <ul class="footer-links">
-            <li><a href="#">Sobre Nosotros</a></li>
-            <li><a href="#">Contactenos</a></li>
-            <li><a href="#">Tienda</a></li>
-            <li><a href="#">Guias</a></li>
-            <li><a href="#">Soporte Tecnico</a></li>
-          </ul>
-        </div>
-      </div>
-      <hr>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8 col-sm-6 col-xs-12">
-          <p>Copyright &copy; 2020 Todos los derechos reservados para D'Luigy.</p>
-        </div>
+									</tr>
+									<tr>
+										<td>26/12/2018</td>
+										<td>12345</td>
+										<td>Corbata roja</td>
+										<td>5</td>
+										<td>$180.000</td>
 
-        <div class="col-md-4 col-sm-6 col-xs-12">
-          <ul class="social-icons">
-            <li><a href="#"><img class="Ico-redessociales" src="imagenes/Footer/ico-facebook.ico"
-                  alt="D'Luigy facebook"></a></li>
-            <li><a href="#"><img class="Ico-redessociales" src="imagenes/Footer/Ico-instagram.ico"
-                  alt="D'Luigy instagram"></a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </footer>
+									</tr>
+									<tr>
+										<td>20/02/2019</td>
+										<td>12345</td>
+										<td>Blazer</td>
+										<td>1</td>
+										<td>$80.000</td>
 
+									</tr>
+									<tr>
+										<td>18/05/2020</td>
+										<td>12345</td>
+										<td>Pantalón</td>
+										<td>2</td>
+										<td>$150.000</td>
 
+									</tr>
+								</tbody>
+							</table>
 
-  	    	
-<script type="text/javascript" src="js/Excel.js"></script>
-<script src="js/filtro.js"></script>
-<script src="js/pdf.js"></script>
-<script src="js/reportes.js"></script>
+							<div class="text-center">
+
+								<button id="btnVentas"
+									class="btn-dark mt-3 pt-2 pb-2  fondo d-botonp rounded-lg pl-4 pr-4">
+									Exportar ventas a excel
+								</button>
+								<button id="pdfVentas"
+									class="btn-dark mt-3 pt-2 pb-2  fondo d-botonp rounded-lg pl-4 pr-4 ml-4">
+									Exportar ventas a pdf
+								</button>
+
+							</div>
+
+						</div>
 
 
+						<div class="col-xl-8 col-lg-8 col-sm-12 col-md-10 mb-3 animated zoomInDown delay-1s" id="dos"
+							style="display: block;">
+							<table class=" table-responsive-md table table-striped  border border-dark fondo"
+								style="background-color: white;" id="tablaInventario">
+								<input class="form-control mb-3 fondo" id="inputInventario" type="text"
+									placeholder="Buscar..">
+								<thead class="thead-dark">
+									<tr>
+										<th>Fecha entrada</th>
+										<th>Producto</th>
+										<th>Descripción</th>
+										<th>Cantidad</th>
+										<th>Valor U.</th>
+										<th>Valor total</th>
+
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>20/02/2020</td>
+										<td>Blazer</td>
+										<td>REF 12</td>
+										<td>20</td>
+										<td>$60.000</td>
+										<td>$1'000.000</td>
+									</tr>
+									<tr>
+										<td>15/01/2020</td>
+										<td>Camisa de rayas</td>
+										<td>REF 122</td>
+										<td>30</td>
+										<td>$35.000</td>
+										<td>$1'050.000</td>
+
+									</tr>
+									<tr>
+										<td>25/12/2020</td>
+										<td>Correa</td>
+										<td>REF 1562</td>
+										<td>100</td>
+										<td>$20.000</td>
+										<td>$2'000.000</td>
+									</tr>
+									<tr>
+										<td>16/08/2020</td>
+										<td>Corbatas</td>
+										<td>REF 152</td>
+										<td>2000</td>
+										<td>$25.000</td>
+										<td>$50'000.000</td>
+									</tr>
+									<tr>
+										<td>15/02/2020</td>
+										<td>Zapato elegante</td>
+										<td>REF 182</td>
+										<td>30</td>
+										<td>$80.000</td>
+										<td>2'400.000</td>
+									</tr>
+
+								</tbody>
+							</table>
 
 
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+							<div class="text-center">
+
+								<button id="btnInventario"
+									class="btn-dark mt-3 pt-2 pb-2  fondo d-botonp rounded-lg pl-4 pr-4">
+									Exportar inventario a excel
+								</button>
+								<button id="pdfInventario"
+									class="btn-dark mt-3 pt-2 pb-2  fondo d-botonp rounded-lg pl-4 pr-4 ml-4">
+									Exportar inventario a pdf
+								</button>
+							</div>
+
+
+
+						</div>
+						<div class="col-xl-8 col-lg-8 col-sm-12 col-md-10 mb-3 animated zoomInDown delay-1s" id="tres"
+							style="display: none;">
+							<table class=" table-responsive-md table table-striped  border border-dark fondo"
+								style="background-color: white;" id="tablaFidelizacion">
+								<input class="form-control mb-3 fondo" id="inputFidelizacion" type="text"
+									placeholder="Buscar..">
+								<thead class="thead-dark">
+									<tr>
+										<th>Numeración</th>
+										<th>Fecha </th>
+										<th>Puntaje cliente</th>
+										<th>Puntaje Max</th>
+
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>1</td>
+										<td>15/02/2020</td>
+										<td>50</td>
+										<td>300</td>
+
+
+									</tr>
+									<tr>
+										<td>2</td>
+										<td>15/02/2019</td>
+										<td>15</td>
+										<td>300</td>
+
+									</tr>
+									<tr>
+										<td>3</td>
+										<td>15/12/2020</td>
+										<td>0</td>
+										<td></td>
+
+									</tr>
+									<tr>
+										<td>4</td>
+										<td>20/08/2020 </td>
+										<td>60</td>
+										<td>300</td>
+
+									</tr>
+									<tr>
+										<td>5</td>
+										<td>15/09/2019 </td>
+										<td>100</td>
+										<td>300</td>
+
+									</tr>
+								</tbody>
+							</table>
+
+
+
+							<div class="text-center">
+
+								<button id="btnFidelizacion"
+									class="btn-dark mt-3 pt-2 pb-2  fondo d-botonp rounded-lg pl-4 pr-4">
+									Exportar fidelización a excel
+								</button>
+								<button id="pdfFidelizacion"
+									class="btn-dark mt-3 pt-2 pb-2  fondo d-botonp rounded-lg pl-4 pr-4 ml-4">
+									Exportar fidelización a pdf
+								</button>
+
+
+							</div>
+						</div>
+
+
+
+						<div class="col-xl-4 col-lg-4 col-md-10 col-sm-12 col-12 mt-5  ">
+
+							<button id="btnTabla1ID" onclick="reportes('uno');"
+								class="btn-dark mt-3 pt-2 pb-2  fondo d-botonp rounded-lg btn-block ">
+								Reporte ventas
+							</button>
+							<button onclick="reportes('dos')"
+								class=" btn-block btn-dark mt-3  pt-2 pb-2 fondo d-botonp rounded-lg">
+								Reporte inventario
+							</button>
+
+							<button id="btnTabla1ID" onclick="reportes('tres');"
+								class="btn-block btn-dark mt-3 pt-2 pb-2  fondo d-botonp rounded-lg">
+								Reporte fidelización
+							</button>
+
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="site-footer  col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 ">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-12 col-md-6">
+					<h6>Sobre Nosotros</h6>
+					<p class="text-justify">Prendas hechas en Colombia con una gran calidad y diseño. Para inspirar a
+						las damas y
+						caballeros modernos. <br>Ropa formal, zapatos, correas, camisas, corbatas y mucha más variedad.
+					</p>
+				</div>
+
+				<div class="col-xs-6 col-md-3">
+					<h6>Articulos</h6>
+					<ul class="footer-links">
+						<li><a href="#">Zapatos</a></li>
+						<li><a href="#">Vestidos</a></li>
+						<li><a href="#">Trajes</a></li>
+						<li><a href="#">Camisas</a></li>
+						<li><a href="#">Pantalones</a></li>
+						<li><a href="#">Accesorios</a></li>
+					</ul>
+				</div>
+
+				<div class="col-xs-6 col-md-3">
+					<h6>Links</h6>
+					<ul class="footer-links">
+						<li><a href="#">Sobre Nosotros</a></li>
+						<li><a href="#">Contactenos</a></li>
+						<li><a href="#">Tienda</a></li>
+						<li><a href="#">Guias</a></li>
+						<li><a href="#">Soporte Tecnico</a></li>
+					</ul>
+				</div>
+			</div>
+			<hr>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-sm-6 col-xs-12">
+					<p>Copyright &copy; 2020 Todos los derechos reservados para D'Luigy.</p>
+				</div>
+
+				<div class="col-md-4 col-sm-6 col-xs-12">
+					<ul class="social-icons">
+						<li><a href="#"><img class="Ico-redessociales" src="../imagenes/Footer/ico-facebook.ico"
+									alt="D'Luigy facebook"></a></li>
+						<li><a href="#"><img class="Ico-redessociales" src="../imagenes/Footer/Ico-instagram.ico"
+									alt="D'Luigy instagram"></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+
+	<script type="text/javascript" src="../js/Excel.js"></script>
+	<script src="../js/filtro.js"></script>
+	<script src="../js/pdf.js"></script>
+	<script src="../js/reportes.js"></script>
+
+
+
+
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+		integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+		crossorigin="anonymous"></script>
 
 
 </body>
+
 </html>
