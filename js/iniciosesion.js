@@ -4,7 +4,7 @@ function validacioninicio(){
    
     
     if(usuario === 'admin12@gmail.com' || contraseña === '12345'){
-        window.location.href="Interfaz-Administrador.html";
+        window.location.href="Usuarios/interfaz-Administrador.html";
 
     }else{
         swal({
