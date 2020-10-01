@@ -125,7 +125,7 @@ p{
   -moz-transition: all 0.3s ease in;
 }
 #team .card:hover{
-  background: #26272b;
+  background: red;
   color: #fff;
   border-radius: 5px;
   border: none;
@@ -172,7 +172,7 @@ section{
 .card .new-content{
   position: absolute;
   bottom: -50px;
-  padding: 24px;
+  padding: 25px;
   background: #ffffff;
   transition: .5s;
 }
@@ -197,7 +197,7 @@ section{
 .card .new-content .post-meta a {
   text-decoration: none;
   padding-right: 10px;
-  color:;
+  color:black;
   font-weight: bold;
   transition: .5s;
 }
@@ -216,7 +216,7 @@ section{
   font-size: 13px;
   margin: 10px 0 0;
   padding: 0;
-  color:;
+  color:black;
   transition: .5s;
   opacity: 0;
 }
