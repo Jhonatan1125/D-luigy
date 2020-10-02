@@ -1,4 +1,28 @@
 @import url(https://allfont.es/allfont.css?fonts=playfair-display-black-italic);
+/*Versiones moviles*/
+/*Computador
+@media all and (min-width: 1440px){
+  .navbar .nav-item .dropdown-menu{  display:block; opacity: 0;  visibility: hidden; transition:.5s; margin-top:0;  }
+  .navbar .dropdown-menu.fade-down{ top:80%; transform: rotateX(-75deg); transform-origin: 0% 0%; }
+  .navbar .nav-item:hover .dropdown-menu{ transition: .9s; opacity:1; visibility:visible; top:100%; transform: rotateX(0deg); }
+  .mapa{width: 700px; height: 600px;}
+  .video-fluid{width: 700px; height: auto;}
+}*/
+
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {.navbar .nav-item .dropdown-menu{  display:block; opacity: 0;  visibility: hidden; transition:.5s; margin-top:0;  }
+.navbar .dropdown-menu.fade-down{ top:80%; transform: rotateX(-75deg); transform-origin: 0% 0%; }
+.navbar .nav-item:hover .dropdown-menu{ transition: .9s; opacity:1; visibility:visible; top:100%; transform: rotateX(0deg); }
+.mapa{width: 700px; height: 600px;}
+.video-fluid{width: 700px; height: auto;}
+}
 /*
 /////
 /////
@@ -8,17 +32,11 @@
 /////
 /////
 */
-@media all and (min-width: 992px){
-  .navbar .nav-item .dropdown-menu{  display:block; opacity: 0;  visibility: hidden; transition:.5s; margin-top:0;  }
-    .navbar .dropdown-menu.fade-down{ top:80%; transform: rotateX(-75deg); transform-origin: 0% 0%; }
-  .navbar .nav-item:hover .dropdown-menu{ transition: .9s; opacity:1; visibility:visible; top:100%; transform: rotateX(0deg); }
-  .mapa{width: 700px; height: 600px;}
-  .video-fluid{width: 700px; height: auto;}
-}
+
 .navbar{
   font-weight: bold;
   /*Color de el menu*/
-  background-color: rgb(172, 172, 172);
+  background-color: #D7D7D7;
   /*Color del borde superior e inferior del menu*/
   border-top: 2px solid red;
   border-bottom: 2px solid red;
@@ -28,9 +46,9 @@
 
 .navbar .navbar-nav .dropdown-menu{
   /*Pequeño espacio entre el cuadro de menu y el submenu para que no choque con el borde el menu*/
-  margin-top: 9px;
+  margin-top: 10px;
   /*Color de los sub-menu*/
-  background-color:  rgb(172, 172, 172);
+  background-color:  #D7D7D7;
 }
 
 .navbar .navbar-nav .dropdown-menu a{
@@ -45,10 +63,19 @@
 
 .navbar .navbar-nav .dropdown-menu a:hover{
   /*Color del las letras de los sub-menu al pasar el clic*/
-  color: rgb(172, 172, 172);
+  color: black;
   /*Color del borde izquierdo de los sub-menu al pasar el clic*/
   border-left: 3px solid red;
 }
+/*
+/////
+/////
+/////
+///// Cuerpo del HTML (BODY)
+/////
+/////
+/////
+*/
 .container{
   display:flex;
   width: 30%;
@@ -126,7 +153,7 @@ input:focus, textarea:focus{
   border-radius: 2px;
 }
 body{
-  background: blanchedalmond;
+  background: #FFF;
 }
 
 h1{font-size: 66px; font-weight: 600; line-height: 80px;}
@@ -143,29 +170,8 @@ section{
   padding: 120px 0;
 }
 
-#inicio{
-  background-image: url('imagenes/Body/Fondo.jpg');
-  background-size: cover;
-  padding-top: 90px;
-  min-height: 700px;
-  color: white;
-}
-
-#inicio p{
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  font-size: 40px;
-}
-
-
-#inicio h1{
-  font-family: 'Playfair Display Black Italic',arial;
-  font-size: 80px;
-}
-
 #objetivo{
-  background-color: teal;
+  background-color: #c7c7c7;
 }
 
 #objetivo p{
@@ -179,8 +185,8 @@ section{
 }
 
 #trabajamos{
-  background-color: thistle;
-  background-image: url('imagenes/Body/Fondo2.jpg');
+  background-color: white;
+  background-image: url('../Imagenes/Body/Fondo3.jpg');
   background-size: cover;
   min-height: 400px;
 }
@@ -208,7 +214,7 @@ width: 100%;
 height: 100%;
 }
 #contactenos{
-  background-image: url('imagenes/Body/Fondo3.jpg');
+  background-image: url('../Imagenes/Body/Fondo4.jpg');
   min-height: 800px;
 }
 
@@ -225,19 +231,17 @@ height: 100%;
   margin-top: 100px;
 }
 
-.contenido-inicio{
-  max-width: 800px;
-  /*top - right - bottom - lef*/
-  margin: auto;
-  text-align: center;
-  float: right;
-}
 
 .contenido-central{
   max-width: 800px;
   /*top - right - bottom - lef*/
   margin: auto;
   text-align: center;
+}
+
+.mapa{
+  width: 100%;
+  height: 600px;
 }
 
 
