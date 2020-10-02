@@ -42,24 +42,27 @@
 */
 
 ul a{
-  color: #26272b;
+  color: white;
 }
 
 ul a:hover{
-  background-color: rgb(63, 63, 63);
+  background-color: rgba(0, 0, 0, 0.329);
   color: white;
 }
 
 .menu-lateral{
   height: 100%;
-  background-color: rgb(172, 172, 172);
+  background-color: rgb(80, 80, 80);
   border-left: 3px solid red;
   border-right: 3px solid red;
 }
 
 
 .logo-menu-lateral{
-  margin-top: 20px;
+  padding-top: 20px;
+  background-color: rgb(175, 174, 174);
+  height: 70px;
+  border-bottom: 3px solid red;
 }
 
 .contenido-lateral{
@@ -67,10 +70,16 @@ ul a:hover{
   margin-bottom: 30px;
 }
 
+#Contenido-Administrador{
+  background-color: white;
+}
+
 .buscar-form{
   float: right;
-  color: white;
+  color: black;
 }
+
+
 
 #lista-precios{
   padding: 0px;

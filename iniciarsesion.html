@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="Estilos/Estilo.css">
+    <link rel="stylesheet" href="Estilos/estiloinicio.css">
+
+    <link rel="shortcut icon" type="ico" href="Imagenes/Body/Logo-pagina-ico.ico">
+
+    <title>Iniciar sesión</title>
+</head>
+
+<body>
+
+    <!--INICIO DEL MENU-->
+    <nav class="navbar navbar-expand-lg navbar-light navbar-toggleable-sm sticky-top">
+
+        <a class="navbar-brand" href="Index.html" style="margin: 0px; padding: 0px;"><img
+                src="Imagenes/Body/Logo-ico.ico" alt="Logo D'Luigy" width="90px" height="45px" loading="Lazy"></a>
+
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+            data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+            aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <div class="navbar-nav ml-auto">
+
+                <li class="nav-item dropdown active">
+                    <a href="#" class="nav-link" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">Mundo D'Luigy</a>
+                    <div class="dropdown-menu fade-down dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                        <a href="Error404.html" class="dropdown-item">Novedades</a>
+                        <a href="Error404.html" class="dropdown-item">Recomendaciones</a>
+                        <a href="Error404.html" class="dropdown-item">Descuentos</a>
+                        <a href="Error404.html" class="dropdown-item">Ofertas</a>
+                        <a href="Error404.html" class="dropdown-item">Videos</a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown active">
+                    <a href="#" class="nav-link" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">Tienda</a>
+                    <div class="dropdown-menu fade-down dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                        <a href="Tienda.html" class="dropdown-item">Cojuntos</a>
+                        <a href="Tienda.html" class="dropdown-item">Accesorios</a>
+                        <a href="Tienda.html" class="dropdown-item">Zapatos</a>
+                        <a href="Tienda.html" class="dropdown-item">Vestidos</a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown active">
+                    <a href="#" class="nav-link" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">Cuenta Personal</a>
+                    <div class="dropdown-menu fade-down dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                        <a href="Error404.html" class="dropdown-item">Iniciar Sesion</a>
+
+                    </div>
+                </li>
+            </div>
+        </div>
+    </nav>
+    <!--FIN DEL MENU-->
+
+    <br>
+    <div class="contenedor-form">
+        <div class="toggle">
+            <span>Crear cuenta</span>
+        </div>
+
+        <div class="formulario">
+            <h2>Iniciar sesión</h2>
+            <form action=""></form>
+            <input id="usuario" type="text" placeholder="Usuario" required autocomplete="off">
+            <input id="contraseñainicio" type="password" placeholder="Contraseña" required>
+            <input type="submit" value="Iniciar sesión" onclick="validacioninicio()">
+            <div class="reset-password">
+                <a id="contraseña">¿Olvidaste tu contraseña?</a>
+            </div>
+
+        </div>
+        <div class="formulario">
+            <h2>Crear cuenta</h2>
+            <form action=""></form>
+            <input id="usuario2" type="text" placeholder="Usuario" required>
+            <input id="contraseña2" type="password" placeholder="Contraseña" required>
+            <input id="confirmarcontraseña" type="password" placeholder="confirmarcontraseña">
+
+            <input id="correoelectronico2" type="email" placeholder="Correo electrónico" required>
+            <input id="telefono" type="text" placeholder="Teléfono">
+
+            <input type="submit" value="Registrarse " onclick="validacionregistro()">
+
+        </div>
+
+
+
+
+    </div>
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <footer class="site-footer  col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 ">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <h6>Sobre Nosotros</h6>
+                    <p class="text-justify">Prendas hechas en Colombia con una gran calidad y diseño. Para inspirar a
+                        las damas y
+                        caballeros modernos. <br>Ropa formal, zapatos, correas, camisas, corbatas y mucha más variedad
+                    </p>
+                </div>
+
+                <div class="col-xs-6 col-md-3">
+                    <h6>Articulos</h6>
+                    <ul class="footer-links">
+                        <li><a href="Tienda.html">Zapatos</a></li>
+                        <li><a href="Tienda.html">Vestidos</a></li>
+                        <li><a href="Tienda.html">Trajes</a></li>
+                        <li><a href="Tienda.html">Camisas</a></li>
+                        <li><a href="Tienda.html">Pantalones</a></li>
+                        <li><a href="Tienda.html">Accesorios</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-xs-6 col-md-3">
+                    <h6>Sobre Nosotros</h6>
+                    <ul class="footer-links">
+                        <li><a href="Index.html#objetivo">Nuestro Objetivo</a></li>
+                        <li><a href="Index.html#trabajamos">Como Trabajamos</a></li>
+                        <li><a href="Index.html#contactenos">Contactenos</a></li>
+                        <li><a href="#">Videos</a></li>
+                        <li><a href="Soporte Tecnico.html">Soporte Tecnico</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-6 col-xs-12">
+                    <p>Copyright &copy; 2020 Todos los derechos reservados para D'Luigy.</p>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <ul class="social-icons">
+                        <li><a href="#"><img class="Ico-redessociales" src="imagenes/Footer/ico-facebook.ico"
+                                    alt="D'Luigy facebook"></a></li>
+                        <li><a href="#"><img class="Ico-redessociales" src="imagenes/Footer/Ico-instagram.ico"
+                                    alt="D'Luigy instagram"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/iniciarsesion.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/sweetalert.min.js"></script>
+    <script src="js/iniciosesion.js"></script>
+    <script src="js/inicioregistro.js"></script>
+</body>
+
+</html>
