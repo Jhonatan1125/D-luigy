@@ -1,9 +1,9 @@
-function validacioninicio(){
+function validacionnicio(){
     var usuario = document.getElementById('usuario').value;
-    var contraseña = document.getElementById('contraseñainicio').value;
+    var contraseña = document.getElementById('contrasenainicio').value;
    
     
-    if(usuario == 'admin12@gmail.com' && contraseña == '12345'){
+    if(usuario === 'admin12@gmail.com' && contraseña === '12345'){
         window.location.href="Usuarios/interfaz-Administrador.html";
 
     }else{
