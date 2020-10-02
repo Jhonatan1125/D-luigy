@@ -1,4 +1,4 @@
-function validacionnicio(){
+function validacioninicio(){
     var usuario = document.getElementById('usuario').value;
     var contraseña = document.getElementById('contrasenainicio').value;
    
