@@ -3,7 +3,7 @@ function validacioninicio(){
     var contraseña = document.getElementById('contraseñainicio').value;
    
     
-    if(usuario === 'admin12@gmail.com' || contraseña === '12345'){
+    if(usuario == 'admin12@gmail.com' && contraseña == '12345'){
         window.location.href="Usuarios/interfaz-Administrador.html";
 
     }else{
